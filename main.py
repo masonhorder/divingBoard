@@ -19,6 +19,6 @@ def divingBoard(longLength, shortLength, count):
     print("----------")
     return returnList
 
-print(divingBoard(77,93,100))
+print(divingBoard(18,31,13))
 
 
