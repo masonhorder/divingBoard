@@ -1,24 +1,9 @@
-def divingBoard(longLength, shortLength, count):
+def divingBoard(shortLength, longLength, count):
     returnList = []
-    totalCount = count + 1
-    
-    for a in range(totalCount):
-        miniList = []
-        longCount = 0
-        while longCount < a:
-            miniList.append(longLength)
-            longCount += 1
-        shortCount = 0
-        while shortCount < count-longCount:
-            miniList.append(shortLength)
-            shortCount += 1
-        print(miniList)
-        returnList.append(sum(miniList))
-        
-    
-    print("----------")
+    for a in range(totalCount+1):
+        returnList.append(shortLength*a + longLength*(count-a))
     return returnList
 
-print(divingBoard(18,31,13))
+print(divingBoard(1,2,3))
 
 
